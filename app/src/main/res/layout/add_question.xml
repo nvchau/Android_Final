@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:background="#fdb655"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:text="Solutions"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="casual"
+            android:text="Add your question"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextTitle"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/input_bg"
+            android:ems="10"
+            android:fontFamily="sans-serif-black"
+            android:hint="  Title"
+            android:inputType="textEmailAddress"
+            android:text=""
+            android:textColor="@android:color/background_dark" />
+
+        <EditText
+            android:id="@+id/editTextKeyWord"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/input_bg"
+            android:ems="10"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:hint="  Key word"
+            android:text=""
+            android:textColor="@android:color/background_dark" />
+
+        <EditText
+            android:id="@+id/editTextContent"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/input_bg"
+            android:ems="10"
+            android:fontFamily="sans-serif-condensed-light"
+            android:hint="  Content"
+            android:inputType="text"
+            android:text=""
+            android:textColor="@android:color/background_dark" />
+
+        <Button
+            android:id="@+id/buttonAddQuestion"
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/holo_blue_dark"
+            android:text="Add question"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonCancel"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="@android:color/darker_gray"
+                android:text="Cancel"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:id="@+id/buttonReset"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="@color/fui_bgPhone"
+                android:text="Reset"
+                android:textColor="@android:color/background_light" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
